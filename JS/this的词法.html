@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Person() {
+            // 构造函数Person()将`this`定义为自身
+            this.age = 0;
+
+            setInterval(function growUp() {
+                // 在非严格模式下，growUp()函数将`this`定义为“全局对象”，
+                // 这与Person()定义的`this`不同，
+                // 所以下面的语句不会起到预期的效果。
+                this.age++; 
+            }, 1000);
+        }
+
+        var p = new Person();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = [
+            "Hydrogen",
+            "Helium",
+            "Lithium",
+            "Beryllium"
+        ];
+
+        var a2 = a.map(function (s) { return s.length });
+
+        console.log(a2); // logs [ 8, 6, 7, 9 ]
+
+        var a3 = a.map(s => s.length);
+
+        console.log(a3); // logs [ 8, 6, 7, 9 ]
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
