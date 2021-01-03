@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Animal properties and method encapsulation
+        var Animal = {
+            type: "Invertebrates", // 属性默认值
+            displayType: function () {  // 用于显示type属性的方法
+                console.log(this.type);
+            }
+        }
+
+        // 创建一种新的动物——animal1
+        var animal1 = Object.create(Animal);
+        animal1.displayType(); // Output:Invertebrates
+
+        // 创建一种新的动物——Fishes
+        var fish = Object.create(Animal);
+        fish.type = "Fishes";
+        fish.displayType(); // Output:Fishes
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

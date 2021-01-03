@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var cats = ['Dusty', 'Misty', 'Twiggy'];
+        console.log(cats.length); // 3
+
+        cats.length = 2;
+        console.log(cats); // logs "Dusty,Misty" - Twiggy has been removed
+
+        cats.length = 0;
+        console.log(cats); // logs nothing; the cats array is empty
+
+        cats.length = 3;
+        console.log(cats); // [undefined, undefined, undefined]
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var array = ['first', 'second', , 'fourth'];
+
+        // returns ['first', 'second', 'fourth'];
+        array.forEach(function (element) {
+            console.log(element);
+        })
+
+        if (array[2] === undefined) { console.log('array[2] is undefined'); } // true
+
+        var array = ['first', 'second', undefined, 'fourth'];
+
+        // returns ['first', 'second', undefined, 'fourth'];
+        array.forEach(function (element) {
+            console.log(element);
+        })
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
