@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用数组将一组值以表格形式显示</title>
+    <script>
+        values = [];
+        for (var x = 0; x < 10; x++) {
+            values.push([
+                2 ** x,
+                2 * x ** 2
+            ])
+        };
+        console.table(values)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
