@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function.name 属性返回函数实例的名称。</title>
+    <script>
+        // function doSomething() { }
+        // doSomething.name;  // "doSomething" 
+        var f = function () { };
+        var object = {
+            someMethod: function () { }
+        };
+
+        console.log(f.name); // "f"
+        console.log(object.someMethod.name); // "someMethod"
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

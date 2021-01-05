@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传入参数调用 Function 构造函数</title>
+    <script>
+        // 创建了一个能返回两个参数和的函数
+        const adder = new Function("a", "b", "return a + b");
+
+        // 调用函数
+        adder(2, 6);
+        //  8
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

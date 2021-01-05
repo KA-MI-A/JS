@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toString() 方法返回一个表示当前函数源代码的字符串。</title>
+    <script>
+        function sum(a, b) {
+            return a + b;
+        }
+
+        console.log(sum.toString());
+        // 输出: "function sum(a, b) {
+        //                     return a + b;
+        //                   }"
+
+        console.log(Math.abs.toString());
+         // 输出: "function abs() { [native code] }"
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
