@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 下面这个例子创建了一个长度为 0 的数组 msgArray，
+        // 然后给 msgArray[0] 和 msgArray[99] 赋值，从而导致数组长度变为了 100。
+        var msgArray = [];
+        msgArray[0] = 'Hello';
+        msgArray[99] = 'world';
+
+        if (msgArray.length === 100) {
+            console.log('The length is 100.');
+        }
+        // 通过索引访问数组元素
+        // var first = fruits[0];
+        // // Apple
+
+        // var last = fruits[fruits.length - 1];
+        // // Banana
+        // 遍历数组
+        // fruits.forEach(function (item, index, array) {
+        //     console.log(item, index);
+        // });
+        // Apple 0
+        // Banana 1
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

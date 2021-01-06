@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array.prototype[@@unscopables] </title>
+    <script>
+        var keys = [];
+
+        with (Array.prototype) {
+            keys.push("something");
+        }
+
+        Object.keys(Array.prototype[Symbol.unscopables]);
+        // ["copyWithin", "entries", "fill", "find", "findIndex",
+        //  "includes", "keys", "values"]
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
