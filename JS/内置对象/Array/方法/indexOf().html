@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+        console.log(beasts.indexOf('bison'));
+        // expected output: 1
+
+        // start from index 2
+        console.log(beasts.indexOf('bison', 2));
+        // expected output: 4
+
+        console.log(beasts.indexOf('giraffe'));
+        // expected output: -1
+        //使用indexOf
+        // var array = [2, 5, 9];
+        // array.indexOf(2);     // 0
+        // array.indexOf(7);     // -1
+        // array.indexOf(9, 2);  // 2
+        // array.indexOf(2, -1); // -1
+        // array.indexOf(2, -3); // 0
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
