@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const array1 = [[0, 1], [2, 3], [4, 5]].reduceRight(
+            (accumulator, currentValue) => accumulator.concat(currentValue)
+        );
+
+        console.log(array1);
+        // expected output: Array [4, 5, 2, 3, 0, 1]
+        //求一个数组中所有值的和
+        var sum = [0, 1, 2, 3].reduceRight(function (a, b) {
+            return a + b;
+        });
+        // sum is 6
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
