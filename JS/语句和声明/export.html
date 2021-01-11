@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 命名导出：
+        // // 导出事先定义的特性
+        // export { myFunction，myVariable };
+
+        // // 导出单个特性（可以导出var，let，
+        // //const,function,class）
+        // export let myVariable = Math.sqrt(2);
+        // export function myFunction() { ... };
+        // 默认导出：
+        // // 导出事先定义的特性作为默认值
+        // export { myFunction as default };
+
+        // // 导出单个特性作为默认值
+        // export default function () { ... }
+        // export default class { ..}
+
+        // // 每个导出都覆盖前一个导出
+        // module "my-module.js"
+        使用命名导出
+        function cube(x) {
+            return x * x * x;
+        }
+
+        const foo = Math.PI + Math.SQRT2;
+
+        var graph = {
+            options: {
+                color: 'white',
+                thickness: '2px'
+            },
+            draw: function () {
+                console.log('From graph draw function');
+            }
+        }
+
+        export { cube, foo, graph };
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
