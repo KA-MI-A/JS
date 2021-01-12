@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迭代异步可迭代对象</title>
+    <script>
+        var asyncIterable = {
+            [Symbol.asyncIterator]() {
+                return {
+                    i: 0,
+                    next() {
+                        if (this.i < 3) {
+                            return Promise.resolve({ value: this.i++, done: false });
+                        }
+
+                        return Promise.resolve({ done: true });
+                    }
+                };
+            }
+        };
+
+        (async function () {
+            for await (num of asyncIterable) {
+                console.log(num);
+            }
+        })();
+
+// 0
+// 1
+// 2
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
