@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var声明的变量的作用域是在函数内</title>
+    <script>
+        // function x() {
+        //     y = 1;   // 在严格模式（strict mode）下会抛出 ReferenceError 异常
+        //     var z = 2;
+        // }
+
+        // x();
+
+        // console.log(y); // 打印 "1"
+        // console.log(z); // 抛出 ReferenceError: z 未在 x 外部声明
+        // var x = 1;
+        var x = 1;
+        if (x === 1) {
+            var x = 2;
+
+            console.log(x);
+            // expected output: 2
+        }
+
+        console.log(x);
+            // expected output: 2
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

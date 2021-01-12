@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let将变量的作用域限制在块内</title>
+    <script>
+        let x = 1;
+
+        if (x === 1) { //严格相同，先检查两个操作数数据类型，如果相同， 则进行===比较
+            let x = 2;
+
+            console.log(x);
+            // expected output: 2
+        }
+
+        console.log(x);
+            // expected output: 1
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //         switch (expression) {
+        //   case value1:
+        //     // 当 expression 的结果与 value1 匹配时，执行此处语句
+        //     [break;]
+        //   case value2:
+        //     // 当 expression 的结果与 value2 匹配时，执行此处语句
+        //     [break;]
+        //   ...
+        //   case valueN:
+        //     // 当 expression 的结果与 valueN 匹配时，执行此处语句
+        //     [break;]
+        //   [default:
+        //     // 如果 expression 与上面的 value 值都不匹配，执行此处语句
+        //     [break;]]
+        // }
+        //例子
+        const expr = 'Papayas';
+        switch (expr) {
+            case 'Oranges':
+                console.log('Oranges are $0.59 a pound.');
+                break;
+            case 'Mangoes':
+            case 'Papayas':
+                console.log('Mangoes and papayas are $2.79 a pound.');
+                // expected output: "Mangoes and papayas are $2.79 a pound."
+                break;
+            default:
+                console.log(`Sorry, we are out of ${expr}.`);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
