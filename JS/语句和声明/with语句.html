@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a, x, y;
+        var r = 10;
+
+        with (Math) {       // with语句里面的变量，分別指向Math对象的PI 、cos和sin函数
+            a = PI * r * r;
+            x = r * cos(PI);
+            y = r * sin(PI / 2);
+        }                  // 后续所有引用都指向Math对象。
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
