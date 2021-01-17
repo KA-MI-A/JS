@@ -1,13 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import From from './page/Azuoye/From';
-import Modal from './page/Modal';
-import Table from './page/Azuoye/Table';
-import Tables from './page/Azuoye/Tables';
-import tihuan from './page/tihuan';
-import Drawers from './page/Azuoye/Drawers';
-import DrewerForm from './page/DrewerForm';
 import SiderDemo from './page/SiderDemo';
 
 
@@ -23,15 +16,6 @@ import MarkdownEditor from './page/Markdown';
 ReactDOM.render(
   <React.StrictMode>
     <SiderDemo/>
-    {/* <DrawerFrom /> */}
-    {/* <Drawer /> */}
-    {/* <Button /> */}
-    {/* <Drop /> */}
-    {/* <Froms /> */}
-    {/* <From /> */}
-    {/* <Menu /> */}
-    {/* <Menus /> */}
-    {/* <Checkbox /> */}
     {/* <Buttons /> */}
     {/* <Bigbang /> */}
     {/* <Layout /> */}
