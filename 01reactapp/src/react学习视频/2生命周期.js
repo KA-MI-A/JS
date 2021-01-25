@@ -55,7 +55,7 @@ class ComLife extends Component{
     }
     changeMsg=()=>{
         this.setState({
-            msg:"hello 老陈"
+            msg:"hello "
         })
     }
 }
