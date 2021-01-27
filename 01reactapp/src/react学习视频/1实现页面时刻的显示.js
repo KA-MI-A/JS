@@ -14,7 +14,7 @@ import './index.css';
 
 
 
-实现页面时刻的显示
+//实现页面时刻的显示
 
 function clock(){
     let time = new Date().toLocaleTimeString()

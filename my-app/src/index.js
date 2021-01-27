@@ -1,19 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import  Bigbang from './src/zujian/Bigbang';
-import  App from './src/reactRouter/App';
-// import reportWebVitals from './reportWebVitals';
-// eslint-disable-next-line no-unused-vars
-// import Todo from './page/react/Todo';
+import From from './page/Azuoye/From';
+// import Modal from './page/Modal';
+import Table from './page/Azuoye/Table';
+import Tables from './page/Azuoye/Tables';
+import tihuan from './page/tihuan';
+import Drawers from './page/Azuoye/Drawers';
+import DrewerForm from './page/DrewerForm';
+import SiderDemo from './page/SiderDemo';
+
+
+
+import reportWebVitals from './reportWebVitals';
+import Todo from './page/react/Todo';
+import Todos from './page/react/Todos';
+import MarkdownEditor from './page/Markdown';
 
 // import Layout from 'antd/lib/layout/layout';
 
 // From
 ReactDOM.render(
   <React.StrictMode>
-    <App />
     {/* <SiderDemo/> */}
+    <DrewerFrom />
+    {/* <Drawer /> */}
+    {/* <Button /> */}
+    {/* <Drop /> */}
+    {/* <Froms /> */}
+    {/* <From /> */}
+    {/* <Menu /> */}
+    {/* <Menus /> */}
+    {/* <Checkbox /> */}
     {/* <Buttons /> */}
     {/* <Bigbang /> */}
     {/* <Layout /> */}
@@ -37,4 +55,4 @@ ReactDOM.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
+reportWebVitals();

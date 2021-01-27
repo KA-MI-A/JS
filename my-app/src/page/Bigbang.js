@@ -2,7 +2,7 @@ import React from 'react';
 import { Drawer, Button } from 'antd';
 
 
-class big extends React.Component{
+class bigbang extends React.Component{
     showDrawer=() => {
       console.log('点击事件');
     };
@@ -17,4 +17,4 @@ class big extends React.Component{
         )
       }
     }
-export default big;
+export default bigbang;

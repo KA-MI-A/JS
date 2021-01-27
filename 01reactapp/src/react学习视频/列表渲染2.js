@@ -1,17 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function ListItem(props){
-    return (
-        <li>
-            <h3>{props.index+1}:listItem:{props.data.title}</h3>
-            <p>{props.data.content}</p>
-        </li>
-    )
-}
 
 
 class ListItem2 extends React.Component{
+    // eslint-disable-next-line no-useless-constructor
     constructor(props){
         super(props)
     }
