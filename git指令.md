@@ -12,7 +12,7 @@
 4. git branch -a    //查看分支
 5. git checkout dev    // 切换分支
 6. git clone xxxxxxx    //克隆项目
-7. ssh-agent bash       //绑定用户名
+7. ssh-agent bash       //绑定用户名0
 8. ssh-add id_rsa       //绑定邮箱
 1. 写ANTD组件 （Dropdown下拉菜单，Button按钮,Icon图标,Checkbox多选框,Form表单,Select选择器）
  - 以上的组件的要求是无论写的是那个，必须要实现跟官网上的效果一模一样的效果，复习每个组件的API
